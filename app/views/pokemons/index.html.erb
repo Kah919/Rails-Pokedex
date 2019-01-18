@@ -1,0 +1,7 @@
+<h1>Pokedex</h1>
+
+<ul>
+  <% @pokemons.each do |poke| %>
+    <li> <%= link_to poke.name, pokemon_path(poke) %> </li>
+  <% end %>
+</ul>
